@@ -1,0 +1,39 @@
+$color1: #219ebc;
+$color2: #8ecae6;
+
+$color-secend: #023047;
+
+$color-acc2: #fb8500;
+$color-acc: #ffb703;
+
+$main-padding: 1em;
+$secndary-padding: 0.5em;
+
+@mixin box($border-radius: 0.6rem, $padding: $secndary-padding) {
+  border-radius: $border-radius;
+  box-shadow: 0 0 0.5rem 0.2rem rgba($color: #000000, $alpha: 0.4);
+  padding: $padding;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Courgette", cursive;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}

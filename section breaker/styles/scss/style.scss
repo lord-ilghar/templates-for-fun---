@@ -1,0 +1,15 @@
+@import "../../../Global";
+.section-break {
+  @include box(0, $main-padding);
+  background-color: $color-secend;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h1 {
+    color: $color-acc;
+  }
+  p {
+    color: white;
+  }
+}

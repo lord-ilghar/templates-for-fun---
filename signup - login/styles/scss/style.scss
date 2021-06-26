@@ -1,0 +1,98 @@
+@import "./../../../Global";
+.form-container {
+  // container of the form and image
+  text-transform: capitalize;
+  display: grid;
+  padding: $secndary-padding;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+
+  img {
+    // images inside of .form-container styles
+    box-shadow: 0 0 8px 0 rgba($color: #000000, $alpha: 0.4),
+      inset 0 0 6px 2px rgba($color: #000000, $alpha: 1);
+  }
+  // inputs in side of parent
+  input {
+    width: 80%;
+    max-width: 20em;
+  }
+  // the header where title and buttons are located
+  .form-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  h2 {
+    color: $color-acc2;
+  }
+}
+
+.login-signup-form {
+  box-shadow: 0 0 8px rgba($color: #000000, $alpha: 0.4);
+  padding: $secndary-padding;
+  background-color: $color2;
+}
+
+// the buttons on top
+.login-signup-button-container {
+  display: flex;
+  button {
+    border-radius: 0;
+    box-shadow: 0 0 8px 0 rgba($color: #000000, $alpha: 0.4);
+  }
+  .signup {
+    box-shadow: inset 0 0 8px 0 rgba($color: #000000, $alpha: 0.4);
+    background-color: $color-acc2;
+  }
+  .login {
+    background-color: $color-acc;
+  }
+}
+
+.two-parts {
+  display: flex;
+  justify-content: space-between;
+
+  input {
+    width: 100%;
+  }
+
+  .two-parts__inputholder {
+    width: 40%;
+    max-width: 20em;
+  }
+}
+
+// this part makes the submit button to be in the center
+.submit-container {
+  display: flex;
+  justify-content: center;
+}
+
+//submit buttons styles
+.submit-btn {
+  &:hover {
+    filter: brightness(120%);
+  }
+  min-width: 10em;
+  width: 40%;
+  max-width: 30em;
+  margin-top: 1em;
+  cursor: pointer;
+  background-color: $color-secend;
+  color: white;
+}
+
+// media that makes the img and form splite on larg screens
+@media screen and (min-width: 900px) {
+  .two-parts {
+    flex-direction: column;
+  }
+  .form-container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    min-height: 30em;
+  }
+}

@@ -11,6 +11,18 @@ h2,
 h3,
 h4,
 h5,
+h6, p,
+label {
+  line-height: 1.2em;
+  padding: 0.3em;
+  max-width: 35em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
 h6 {
   font-family: "Courgette", cursive;
 }
@@ -23,10 +35,41 @@ img {
   display: block;
 }
 
+textarea:focus,
+input:focus,
+button:focus {
+  -webkit-box-shadow: 0 0 4px 1px rgba(0, 203, 230, 0.5), inset 0 0 4px 1px rgba(0, 203, 230, 0.5);
+          box-shadow: 0 0 4px 1px rgba(0, 203, 230, 0.5), inset 0 0 4px 1px rgba(0, 203, 230, 0.5);
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 10em;
+  max-height: 30em;
+}
+
+label {
+  display: block;
+  margin-top: 0.5em;
+}
+
+input,
+textarea,
+button {
+  border: none;
+  border-radius: 0.6rem;
+  padding: 0.5em;
+}
+
 .overlap-container {
   margin: 1em auto;
   padding: 1em;
-  min-height: 20em;
+  min-height: 30em;
   max-width: 40em;
   display: -ms-grid;
   display: grid;
@@ -63,7 +106,7 @@ img {
 }
 
 .overlap-container .child-overlap,
-.overlap-container .child-overlap > * {
+.overlap-container .child-overlap > img {
   border-radius: 0.6rem;
   -webkit-box-shadow: 0 0 0.5rem 0.2rem rgba(0, 0, 0, 0.4);
           box-shadow: 0 0 0.5rem 0.2rem rgba(0, 0, 0, 0.4);

@@ -1,9 +1,9 @@
-@import "../../vars";
+@import "../../Global";
 
 .overlap-container {
   margin: 1em auto;
   padding: $main-padding;
-  min-height: 20em;
+  min-height: 30em;
   max-width: 40em;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -21,7 +21,7 @@
   }
   .child-overlap {
     &,
-    & > * {
+    & > img {
       @include box(0.6rem, 0);
     }
     grid-column: 2/-1;

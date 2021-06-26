@@ -1,0 +1,13 @@
+textarea:focus,
+input:focus,
+button:focus {
+  box-shadow: 0 0 4px 1px rgba($color: #00cbe6, $alpha: 0.5),
+    inset 0 0 4px 1px rgba($color: #00cbe6, $alpha: 0.5);
+  border: #00cbe6 1px solid;
+  outline: none;
+}
+textarea {
+  resize: vertical;
+  min-height: 10em;
+  max-height: 30em;
+}
